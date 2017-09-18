@@ -15,7 +15,7 @@
     width: 1px;
     height: 50%;
     background-color: black;
-    transform-origin: 50% 80%;
+    transform-origin: 50% 100%;
     position: absolute;
     left: 50%;
 }
