@@ -1,21 +1,45 @@
-:root{
-    --size: 500px;
+:root {
+    --size: 60rem;
 }
 
-#clock{
+#clock {
+	background: conic-gradient(#f15854 4%, #4d4d4d 0 8%, #5da5da 0 17%, #decf3f 0 48%, #b276b2 0 54%, #faa43a 0);
     width: var(--size);
     height: var(--size);
     background-color: #ccc;
     border: 3px solid #000;
     border-radius: 50%;
     position: relative;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    z-index: 10;
 }
 
-#hand{
+.controlPanel {
+    margin-left: 40rem;
+    margin-top: 5rem;
+}
+
+.controlButtons {
+    margin-top: 2rem;
+    width: 15rem;
+}
+
+#hand {
     width: 1px;
     height: 50%;
     background-color: black;
     transform-origin: 50% 100%;
     position: absolute;
     left: 50%;
+    z-index: 10000;
+}
+
+.clockWrapper {
+	float: left;
+	padding: 50px;
+}
+
+.controlPanelWrapper {
+	padding: 50px;
 }

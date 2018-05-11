@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Maturitní hodiny</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+			integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+			integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+			crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+			integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+			crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="./helpers/index.js"></script>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Maturitní hodiny</a>
+		</div>
+	</div>
+</nav>
+<div id="timesUp" class="modal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p>Čas pro vykonání zkoušky vypršel.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="timesUpCloseButton" class="btn btn-primary">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clockWrapper">
+	<div id="clock">
+		<div id="hand"></div>
+	</div>
+</div>
+<div class="controlPanelWrapper">
+	<div class="controlPanel">
+		<div class="timers">
+			<p>
+			<h2>Uběhlo:</h2>
+			<h3>
+				<div id="elapsedTime"></div>
+			</h3>
+			</p>
+			<p>
+			<h2>Zbývá:</h2>
+			<h3>
+				<div id="remainingTime"></div>
+			</h3>
+			</p>
+		</div>
+		<div class="controlButtons">
+			<p>
+				<button id="startButton" class="btn btn-success btn-block btn-lg">Začít odpočet</button>
+			</p>
+			<p>
+				<button id="resetButton" class="btn btn-danger btn-block btn-lg">Resetovat</button>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="navbar navbar-default navbar-fixed-bottom">
+	<div class="container">
+		<p class="navbar-text pull-right">© 2017 - Michal Kroupa
+		</p>
+	</div>
+</div>
+</body>
+</html>
