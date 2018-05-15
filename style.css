@@ -15,6 +15,10 @@
 	z-index: 10;
 }
 
+.controlButtons {
+	padding-top: 50px;
+}
+
 #startButton, #resetButton {
 	width: 150px;
 }
@@ -40,7 +44,7 @@
 
 .key {
 	padding-top: 100px;
-	padding-right: 100px;
+	padding-right: 300px;
 	float: right;
 	list-style: none;
 	display: table;
