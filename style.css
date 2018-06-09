@@ -1,5 +1,5 @@
 :root {
-	--size: 45rem;
+	--size: 325px;
 }
 
 #clock {
@@ -11,12 +11,31 @@
 	border-radius: 50%;
 	position: relative;
 	margin-left: 5rem;
-	margin-top: 5rem;
 	z-index: 10;
 }
 
+.key {
+	float: left;
+	padding-top: 40px;
+	padding-right: 20px;
+	list-style: none;
+	display: table;
+	border-collapse: separate;
+}
+
+.clockWrapper {
+	padding-top: 40px;
+	float: left;
+}
+
+.controlPanelWrapper {
+	padding-top: 40px;
+	padding-left: 50px;
+	float: left;
+}
+
 .controlButtons {
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 #startButton, #resetButton {
@@ -31,24 +50,6 @@
 	position: absolute;
 	left: 50%;
 	z-index: 10000;
-}
-
-.clockWrapper {
-	float: left;
-	padding: 50px;
-}
-
-.controlPanelWrapper {
-	padding: 100px;
-}
-
-.key {
-	padding-top: 100px;
-	padding-right: 300px;
-	float: right;
-	list-style: none;
-	display: table;
-	border-collapse: separate;
 }
 
 .key > li {
@@ -97,4 +98,8 @@
 
 .fourth {
 	background: #2196F3;
+}
+
+.highlight {
+	background: rgba(255, 255, 0, 0.31);
 }
